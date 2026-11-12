@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrícia Starck | Portfólio</title>
+    <!-- Conectando o CSS e a fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <nav aria-label="Navegação principal">
+            
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <!-- Seção Hero / Sobre Mim (Inspirada no topo da referência) -->
+        <section id="sobre">
+            <div>
+                <span>DESENVOLVEDORA FULL STACK & IA</span>
+                <h1>Patricia Starck Bernardi</h1>
+                <hr>
+                <p>
+                    "Olá! Sou a Patricia. Com formação em Análise e Desenvolvimento de Sistemas e transição 
+                    de carreira vinda da área da saúde, construo APIs robustas, pipelines de dados e orquestração de 
+                    fluxos RAG, transformando dados corporativos e oficiais em respostas precisas."
+                </p>
+                <a href="#projetos" aria-label="Ir para a seção de projetos">Ver projetos ↓</a>
+            </div>
+
+            <!-- Espaço para sua foto ou mosaico de imagens (como na direita da referência) -->
+            <figure>
+                <img src="assets/foto_eu.jpg" alt="Foto de perfil de Patrícia Starck sorrindo">
+            </figure>
+        </section>
+
+        <!-- Seção Vitrine de Projetos (Inspirada nos cards inferiores da referência) -->
+        <section id="projetos">
+            <header>
+                <span>PORTFÓLIO</span>
+                <h2>Confira os projetos em destaque</h2>
+                <p>Dê uma olhada nas aplicações e pipelines que venho desenvolvendo.</p>
+            </header>
+
+            <!-- Container da grade de projetos -->
+            <div>
+                <!-- Projeto 1 -->
+                <article>
+                    <span>JAVA & SPRING BOOT</span>
+                    <h3>FÓRUM HUB</h3>
+                    <p>
+                        API REST completa para um fórum, desenvolvida com Spring Boot 3, 
+                        que permite o gerenciamento de tópicos, respostas e usuários. 
+                    </p>
+                    <footer>
+                        <a href="https://github.com/patriciastarck" target="_blank" rel="noopener noreferrer">
+                            Ver código no GitHub →
+                        </a>
+                    </footer>
+                </article>
+
+                <!-- Projeto 2 -->
+
+                <article>
+                    <span>JAVA & SPRING BOOT</span>
+                    <h3>SentimentAPI</h3>
+                    <p>
+                        API REST inteligente para análise automática de sentimentos em feedbacks de clientes. 
+                        Integração robusta de Java Spring Boot com ONNX Runtime para classificação de avaliações.
+                    </p>
+                    <footer>
+                        <a href="https://github.com/patriciastarck" target="_blank" rel="noopener noreferrer">
+                            Ver código no GitHub →
+                        </a>
+                    </footer>
+                </article>
+
+                <article>
+                    <span>PYTHON & LANGCHAIN</span>
+                    <h3>PCDT RAG Pipeline</h3>
+                    <p>
+                        Sistema RAG para consultar Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde, 
+                        bulas da ANVISA, a RENAME e dados agregados de internações do SIH/SUS.
+                    </p>
+                    <footer>
+                        <a href="https://github.com/Residencia-Time2/saude-publica-protocolos-clinicos" target="_blank" rel="noopener noreferrer">
+                            Ver código no GitHub →
+                        </a>
+                    </footer>
+                </article>
+
+                <article>
+                    <span>PYTHON RAG</span>
+                    <h3>VendeFacil</h3>
+                    <p>
+                        Mini Desafio RAG (Retrieval-Augmented Generation) 
+                        baseado no ecossistema da empresa fictícia VendeFácil Tecnologia Ltda.!
+                    </p>
+                    <footer>
+                        <a href="https://github.com/mini-desafio-rag-vendefacil/rag-vendefacil-15-oliveira-bernardi" target="_blank" rel="noopener noreferrer">
+                            Ver código no GitHub →
+                        </a>
+                    </footer>
+                </article>
+                
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato">
+            <header>
+                <span>CONTATO</span>
+                <h2>Vamos conversar?</h2>
+                <p>Estou aberta a oportunidades como Desenvolvedora Júnior, Analista de Sistemas ou projetos colaborativos.</p>
+            </header>
+
+            <form action="mailto:seu-email@exemplo.com" method="post" enctype="text/plain">
+                <div>
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Como posso te chamar?">
+                </div>
+
+                <div>
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé e Redes Sociais -->
+    <footer>
+        <p>Desenvolvido por Patrícia Starck • Projeto trendsIT</p>
+        <ul>
+            <li>
+                <a href="https://github.com/patriciastarck" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
