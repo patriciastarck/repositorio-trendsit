@@ -1,0 +1,338 @@
+/* Variáveis de Cores (Tema Café / Terroso Escuro) */
+:root {
+    --bg-primary: #1a1614;
+    --bg-secondary: #26201d;
+    --bg-card-hover: #2f2724;
+    --text-primary: #f3efe6;
+    --text-secondary: #c7bdb5;
+    --accent-terracotta: #a45a49;
+    --accent-terracotta-hover: #8a4839;
+    --accent-gold: #e7a80e;
+    --border-subtle: #382f2b;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 1.25rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav span {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--text-primary);
+}
+
+/* Estrutura Principal */
+main {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+/* Tags de Destaque (Labels superiores) */
+section span,
+article > span {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent-terracotta);
+    margin-bottom: 0.5rem;
+}
+
+/* Seção Hero / Sobre Mim (Mobile-First) */
+#sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+#sobre h1 {
+    font-size: 2.25rem;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+#sobre hr {
+    border: none;
+    height: 2px;
+    width: 140px;
+    background-color: var(--accent-terracotta);
+    margin-bottom: 1.5rem;
+}
+
+#sobre p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 540px;
+}
+
+#sobre a {
+    display: inline-block;
+    background-color: var(--accent-terracotta);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.85rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+#sobre a:hover {
+    background-color: var(--accent-terracotta-hover);
+}
+
+#sobre figure img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 16px;
+    border: 2px solid var(--border-subtle);
+    display: block;
+}
+
+/* Seção Vitrine de Projetos */
+#projetos > header {
+    position: static;
+    border: none;
+    padding: 0 0 2rem 0;
+}
+
+#projetos h2,
+#contato h2 {
+    font-size: 1.85rem;
+    margin-bottom: 0.5rem;
+}
+
+#projetos > header p,
+#contato > header p {
+    color: var(--text-secondary);
+}
+
+/* Grade de Cards */
+#projetos > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+article {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    background-color: var(--bg-card-hover);
+}
+
+article > span {
+    color: var(--accent-gold);
+}
+
+article h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+article p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+article footer a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--accent-terracotta);
+    padding-bottom: 2px;
+}
+
+article footer a:hover {
+    color: var(--accent-terracotta);
+}
+
+/* Seção de Contato e Formulário */
+#contato > header {
+    position: static;
+    border: none;
+    padding: 0 0 2rem 0;
+}
+
+form {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+input,
+textarea {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 0.85rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-terracotta);
+}
+
+button[type="submit"] {
+    background-color: var(--accent-terracotta);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 8px;
+    padding: 0.95rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-terracotta-hover);
+}
+
+/* Rodapé */
+body > footer {
+    border-top: 1px solid var(--border-subtle);
+    padding: 2rem 5%;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+body > footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+body > footer a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+body > footer a:hover {
+    color: var(--accent-terracotta);
+}
+
+/* Responsividade para Tablets e Desktops (Media Queries) */
+@media (min-width: 768px) {
+    #sobre {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem 0;
+    }
+
+    #sobre h1 {
+        font-size: 3rem;
+    }
+
+    #projetos > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body > footer {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1120px;
+        margin: 2rem auto 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    #projetos > div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
