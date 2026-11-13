@@ -9,7 +9,7 @@
 Este projeto consiste em uma **Landing Page de Portfólio Profissional**, desenvolvida como entrega da **Fase 1 - Projeto 1 do programa trendsIT**. O objetivo principal é estabelecer uma identidade digital profissional para apresentar minha trajetória, habilidades técnicas em desenvolvimento Back-End, pipelines de dados e sistemas RAG (Retrieval-Augmented Generation).
 
 ### Link da Aplicação (Deploy)
-* **Live Preview:** *(Adicione aqui o link do GitHub Pages ou Vercel assim que publicar)*
+* **Live Preview:** *https://patriciastarck.github.io/repositorio-trendsit/*
 
 ---
 
